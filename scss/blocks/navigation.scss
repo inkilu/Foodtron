@@ -1,0 +1,125 @@
+@import "../variables";
+@import "../mixins";
+/*======= Navigation Styles =======*/
+
+
+nav.main__menu__nav{
+	@include flexbox();
+	@include align-self(stretch);
+	@include align-items(center);
+	@include justify-content(center);
+	ul{
+		padding-left: 0;
+		margin-bottom: 0;
+		@include flexbox();
+		@include align-self(stretch);
+		@include align-items(center);
+		@include justify-content(center);
+		li{
+			padding: 0 20px;
+			display: inline-block;
+			@include flexbox();
+			@include align-self(stretch);
+			@include align-items(center);
+			&:hover a{
+				color: $theme-color;
+			}
+			&.drop{
+				position: relative;
+				&:hover ul.dropdown__menu {
+				 	opacity: 1;
+				    visibility: visible;
+				    transform: translateY(0);
+				}
+				ul{
+					&.dropdown__menu{
+						background: #fff;
+					    border: medium none;
+					    border-radius: 0;
+					    display: block;
+					    left: 0;
+					    min-width: 232px;
+					    opacity: 0;
+					    padding: 0;
+					    position: absolute;
+					    text-align: left;
+					    top: 100%;
+					    transform: translateY(10%);
+					    transition: 0.3s;
+					    visibility: hidden;
+						li{
+							border-bottom: 1px solid #f2f2f2;
+							display: block;
+							float: none;
+							margin-left: 0;
+							margin-right: 0;
+							a{
+								color: #444;
+								display: block;
+								font-family: Open Sans;
+								font-size: 14px;
+								font-weight: 400;
+								height: auto;
+								line-height: 45px;
+								padding: 0;
+								text-transform: capitalize;
+								transition: all 150ms linear 0s;
+								&:hover{
+									color: $theme-color;
+									padding-left: 5px;
+								}
+
+							}
+						}
+					}
+				}
+			}
+			a{
+				@include flexbox();
+				@include align-self(stretch);
+				@include align-items(center);
+				color: #444;
+				font-size: 14px;
+				height: 100px;
+				font-weight: 700;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+
+@media #{$lg-layout}{
+
+	
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

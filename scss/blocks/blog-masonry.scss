@@ -1,0 +1,126 @@
+@import "../variables";
+@import "../mixins";
+/*=======  Our Blog Mesonry Area =======*/
+
+.bl__item {
+    margin-top: 40px;
+}
+
+.blog__masonery__area {
+    background: #f6f8fd none repeat scroll 0 0;
+}
+
+.blog__masonry{
+    background: #fff none repeat scroll 0 0;
+    .bl__maso__thumb{
+        overflow: hidden;
+        a{
+            img{
+                width: 100%;
+                transition: all 0.5s ease 0s;
+            }
+        }
+    }
+    .bl__mass__content{
+        padding: 30px;
+        h2{
+            line-height: 35px;
+            a{
+                color: #262626;
+                font-family: Open Sans;
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: 4px;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+        p{
+            color: #262626;
+            font-size: 14px;
+            line-height: 26px;
+            margin-top: 18px;
+
+        }
+        ul{
+            &.bl__maso__meta{
+                li{
+                    color: #969696;
+                    display: inline-block;
+                    font-size: 13px;
+                    &.meta__light{
+                        color: #262626;
+                        font-size: 14px;
+                        padding-right: 25px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.blog__masonry:hover .bl__maso__thumb a img {
+    transform: scale(1.15) rotate(3deg);
+}
+.blog__masonery__wrap{
+	margin-top:-30px;
+}
+
+
+
+
+@media #{$lg-layout}{
+
+.blog__masonry .bl__mass__content h2 a {
+  font-size: 20px;
+}
+
+
+
+    
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+.blog__masonry .bl__mass__content h2 a {
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

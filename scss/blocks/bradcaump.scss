@@ -1,0 +1,77 @@
+@import "../variables";
+@import "../mixins";
+/*=======  Our Bradcaump Area =======*/
+
+
+.ht__bradcaump__wrap{
+	height: 412px;
+	.bradcaump__inner{
+		.bradcaump-title{
+			color: #444444;
+		    font-family: $body-font;
+		    font-size: 36px;
+		    font-weight: 700;
+		    text-transform: uppercase;
+
+		}
+		.bradcaump-inner{
+			margin-top: 11px;
+			.breadcrumb-item{
+				color: #444444;
+			    font-size: 16px;
+			    font-weight: 700;
+			    text-transform: uppercase;
+			    @include transition(0.5s);
+			}
+			.brd-separetor{
+				i{
+					color: #444444;
+				    font-size: 17px;
+				    padding: 0 7px;
+				}
+			}
+		}
+	}
+
+}
+
+.popupal__menu h4 {
+    font-size: 29px;
+    color: #444;
+    font-family: $body-font;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+
+
+
+.ht__bradcaump__wrap .bradcaump__inner.brad__white .bradcaump-inner .brd-separetor i {
+  color: #fff;
+}
+.ht__bradcaump__wrap .bradcaump__inner.brad__white .bradcaump-inner .breadcrumb-item {
+  color: #fff;
+}
+.ht__bradcaump__wrap .bradcaump__inner.brad__white .bradcaump-title {
+  color: #fff;
+}
+
+
+@media #{$lg-layout}{
+
+	
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}

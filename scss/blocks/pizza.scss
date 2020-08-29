@@ -1,0 +1,491 @@
+@import "../variables";
+@import "../mixins";
+/*======= Banner Styles =======*/
+
+/*------------------------
+	Pizza Arae
+--------------------------*/ 
+
+
+
+
+.pizza{
+    background: #ffffff none repeat scroll 0 0;
+    padding: 0;
+    text-align: center;
+    margin-top:40px;
+    .pizza__thumb{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .pizza__hover__action{
+            background: #fdc50e none repeat scroll 0 0;
+            border-radius: 100%;
+            height: 70px;
+            line-height: 65px;
+            opacity: 0;
+            position: absolute;
+            right: 19%;
+            text-align: center;
+            top: 34px;
+            transform: scale(0);
+            transition: all 0.5s ease 0s;
+            width: 70px;
+            span{
+                color: #ffffff;
+                font-family: $heading-font;
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    }
+    .pizza__details{
+        padding: 0 9px;
+        margin-top: 14px;
+        .pizza__title{
+            color: #ffffff;
+            font-size: 26px;
+            position: relative;
+            z-index: 2;
+            &::before {
+                background-image: url("images/icon/lg-shape/2.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                content: "";
+                height: 67px;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 100%;
+                z-index: -1;
+            }
+            a{
+              color: #fff;  
+            }
+        }
+        p{
+            color: #959595;
+            font-size: 14px;
+            margin-bottom: 15px;
+            margin-top: 40px;
+            padding: 0 22px;  
+        }
+    }
+}
+
+.pizza:hover .pizza__hover__action {
+  opacity: 1;
+  transform: scale(1);
+}
+.pizza__btn {
+    transform: translateY(20px);
+}
+
+.order-now-area {
+  margin-top: 157px;
+  padding-top: 134px;
+}
+
+
+
+.bg__shape--2 {
+	padding-bottom: 187px;
+	padding-top: 77px;
+	position: relative;
+	background-image: url("images/shape/1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	bottom: 0;
+	content: "";
+	height: 100%;
+	width: 100%;
+}
+.order__now__inner{
+	h6{
+		color: #ffffff;
+	    font-size: 24px;
+	    font-weight: 400;
+	    text-transform: capitalize;
+	}
+	h2{
+		color: #ffffff;
+	    font-family: Open Sans;
+	    font-size: 48px;
+	    font-weight: 900;
+	    letter-spacing: 2px;
+	    margin-top: 3px;
+	    text-transform: uppercase;
+	}
+	p{
+		color: #ffffff;
+	    font-family: Alegreya;
+	    font-size: 26px;
+	    font-weight: 700;
+	    line-height: 30px;
+	    margin-top: 30px;
+	}
+}
+
+
+
+
+
+@media #{$lg-layout}{
+
+
+
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}
+
+
+
+
+
+/*------------------------
+    Resturant Food Menu
+--------------------------*/ 
+
+.single__resturent__food {
+  @include flex-basis(50%);
+}
+
+.single__resturent__food{
+    margin-bottom: 10px;
+    padding: 0 5px;
+    .resturent__thumb{
+        min-width: 300px;
+            img{
+                width: 100%;
+            }
+         }
+    .resturent__details{
+        background: #ffffff none repeat scroll 0 0;
+        box-shadow: 0 0 32px rgba(139, 139, 139, 0.1);
+        padding: 20px;
+        text-align: center;
+        ul{
+            &.res__pizz__size{
+                
+            }
+            li{
+                margin: 0 16px;
+                color: #d50c0d;
+                font-family: Alegreya;
+                font-size: 14px;
+                text-transform: capitalize;
+                span{
+                    display: block;
+                    font-size: 26px;
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+        }
+        h4{
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 40px;
+            a{
+
+            }
+        }
+        h6{
+            color: #959595;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+        p{
+            color: #959595;
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 11px;
+        }
+    }
+}
+
+.resturent__food__menu {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.res__btn {
+    margin-top: 29px;
+}
+
+@media #{$lg-layout}{
+.resturent__food__menu .plr--250px {
+  padding: 0 148px;
+}
+.single__resturent__food {
+  flex-basis: 100%;
+}
+
+    
+}
+
+@media #{$md-layout}{
+
+.resturent__food__menu .plr--250px {
+  padding: 0 30px;
+}
+
+.single__resturent__food {
+  flex-basis: 100%;
+}
+
+
+
+
+
+
+
+
+
+}
+@media #{$sm-layout}{
+
+.resturent__food__menu .plr--250px {
+  padding: 0 30px;
+}
+
+.single__resturent__food {
+  flex-basis: 100%;
+}
+
+
+
+
+
+}
+
+@media #{$xs-layout}{
+
+.resturent__food__menu .plr--250px {
+  padding: 0 30px;
+}
+.single__resturent__food {
+  flex-wrap: wrap;
+}
+.single__resturent__food .resturent__thumb {
+  min-width: auto;
+  width: 100%;
+}
+
+
+}
+
+
+/*------------------------
+    Popular Food Menu
+--------------------------*/ 
+
+
+
+.popular__food {
+  background: #fff none repeat scroll 0 0;
+  margin-left: 22px;
+  margin-top: 70px;
+  padding-bottom: 30px;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0 10px 10px rgba(0 , 0, 0 ,0.1);
+}
+.pp_food__thumb {
+    position: relative;
+}
+.pp__food__prize {
+    background: #60ba62 none repeat scroll 0 0;
+    border-radius: 100%;
+    height: 80px;
+    left: -30px;
+    position: absolute;
+    top: -30px;
+    width: 80px;
+    line-height:80px;
+    @include transition(0.5s);
+}
+.pp__food__prize.offer span.new {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: capitalize;
+  line-height: 30px;
+  padding-top: 7px;
+}
+
+.pp__food__prize.offer {
+    line-height: inherit;
+}
+
+
+
+.pp__food__prize span {
+    color: #ffffff;
+    font-size: 24px;
+}
+.pp__fd__icon {
+    margin-top: 30px;
+}
+.pp__food__details {
+    margin-top: 12px;
+}
+.pp__food__details h4 {
+    color: #777777;
+    font-family: Open Sans;
+    font-weight: 400;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+}
+.pp__food__details p {
+    color: #797979;
+    margin-top: 4px;
+}
+.pp__food__bottom {
+    border-top: 1px solid #eeeeee;
+    margin-top: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+.pp__fd__icon img {
+    max-height: 35px;
+}
+.food__btn.btn--transparent {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #f2f2f2;
+    color: #959595;
+}
+.pp_food__thumb a {
+    display: block;
+}
+.pp_food__thumb {
+}
+.popular__food:hover {
+    transform: translateY(-20px);
+}
+.popular__food:hover .pp__food__prize {
+  background: $theme-color;
+}
+.pp_food__thumb a img {
+  width: 100%;
+}
+.pp__food__prize.active {
+  background: #d50c0d;
+}
+
+
+.pp__meta{
+    li{
+
+        a{
+            color: #959595;
+            font-size: 14px;
+            i{
+                padding-right: 5px;
+            }
+        }
+    }
+
+}
+.pp__meta li + li {
+    padding-left: 19px;
+}
+
+
+@media #{$lg-layout}{
+
+.pp__food__details p {
+  font-size: 14px;
+}
+.popular__food {
+  margin-left: 9px;
+} 
+.pp__food__bottom {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+
+    
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+.popular__food {
+  margin-left: 0;
+}
+.pp__food__bottom {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+@import "../variables";
+@import "../mixins";
+/*--------------------------
+	Pagination Area
+---------------------------*/
+
+
+
+
+
+.food__pagination li a {
+    color: #959595;
+    font-size: 18px;
+}
+.food__pagination li {
+  margin: 0 6px;
+}
+.food__pagination li a{
+	 background: transparent;
+    border-radius: 100%;
+    color: #959595;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 38px;
+}
+
+
+.food__pagination li.active a,
+.food__pagination li a:hover{
+    background: #444444 none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #fff;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 38px;
+}
+.food__pagination li.active a,
+.food__pagination li a{
+	position:relative;
+	z-index:1;
+}
+
+.food__pagination li a::before {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 100%;
+  bottom: 2px;
+  content: "";
+  left: 2px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+
+}
+
+.food__pagination li a::after {
+  background: #444444 none repeat scroll 0 0;
+  border-radius: 100%;
+  bottom: 4px;
+  content: "";
+  left: 4px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.food__pagination li a:hover::before,
+.food__pagination li.active a::before{
+	opacity: 1;
+}
+.food__pagination li a:hover::after,
+.food__pagination li.active a::after{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+

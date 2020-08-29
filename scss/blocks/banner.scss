@@ -1,0 +1,533 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*------------------------
+	Subscribe Area
+--------------------------*/ 
+
+.subscribe__inner {
+    padding: 100px 200px;
+    text-align: center;
+    h2{
+    	color: #666666;
+	    font-family: $body-font;
+	    font-size: 24px;
+	    font-weight: 700;
+	    margin-bottom: 43px;
+	    text-transform: uppercase;
+    }
+    .enter__email__address{
+    	@include flexbox();
+	    @include flex-wrap(wrap);
+	    @include justify-content(space-between);
+    	
+    }
+}
+
+.subscribe__btn {
+  margin-left: 10px;
+}
+.htc__news__inner {
+    display: flex;
+    justify-content: center;
+}
+.news__input {
+    flex-basis: 80%;
+}
+.news__input input {
+    background: #222 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    color: #959595;
+    height: 50px;
+    padding: 0 30px;
+    width: 100%;
+    font-size: 14px;
+    outline: medium none;
+}
+.subscribe__btn {
+    flex-basis: 20%;
+}
+.subscribe__btn {
+	flex-basis: 20%;
+}
+.subscribe__inner .enter__email__address .sign__up {
+	border: 0 none;
+	color: #fff;
+	font-family: "Open Sans",sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	height: 50px;
+	padding: 0 40px;
+}
+.sign__up.food__btn {
+	border: 0 none;
+	font-family: Open Sans;
+	font-weight: 700;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 34px;
+	transition: 0.3s;
+}
+.sign__up.food__btn:hover{
+	background: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subscribe__inner.subscribe--3 h2{
+	color: #ffffff;
+  	font-size: 24px;
+  	text-transform: uppercase;
+ }
+
+
+.subscribe--2 .news__input input{
+  background: #fff none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: 0 0 32px rgba(49, 49, 49, 0.12);
+}
+.subscribe--2 .food__btn {
+  background: #222222 none repeat scroll 0 0;
+  border-radius: 0;
+  color: #fff;
+  text-transform: lowercase;
+}
+.subscribe--2 .food__btn:hover{
+	background: $theme-color;
+}
+
+
+.subscribe--2 .food__btn::before {
+  background: #d50c0d none repeat scroll 0 0;
+  border-radius: 0px;
+}
+
+.subscribe__inner.subscribe--3 .news__input input {
+  background: #fff none repeat scroll 0 0;
+}
+
+
+
+
+.subscribe__inner .enter__email__address input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #959595;
+}
+.subscribe__inner .enter__email__address input:-ms-input-placeholder { /* IE 10+ */
+	color: #959595;
+}
+.subscribe__inner .enter__email__address input:-moz-placeholder {
+    color: #959595;
+}
+.subscribe__inner .enter__email__address input::placeholder {
+    color: #959595;
+    opacity: 1;
+}
+
+
+
+
+@media #{$lg-layout}{
+	.subscribe__inner {
+	  padding: 100px 75px;
+	}
+		
+
+
+
+}
+
+@media #{$md-layout}{
+
+.subscribe__inner .enter__email__address input {
+  flex-basis: 76.5%;
+}
+.subscribe__inner {
+  padding: 100px 30px;
+}
+
+
+}
+@media #{$sm-layout}{
+.subscribe__inner {
+  padding: 100px 0;
+}
+.subscribe__inner .enter__email__address input {
+  flex-basis: 71.5%;
+}
+
+
+
+}
+
+@media #{$xs-layout}{
+
+.subscribe__inner {
+  padding: 100px 0;
+}
+.subscribe__inner .enter__email__address input {
+  flex-basis: 100%;
+}
+.subscribe__inner .enter__email__address .sign__up {
+  margin-top: 20px;
+}
+.subscribe__inner h2 {
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+// SubsCribe Style Three
+
+.fd__subscribe__wrapper .fd__subscribe__area {
+  overflow: visible;
+}
+ .subscribe__inner.subscribe--3 {
+  background: #282c35 none repeat scroll 0 0;
+  padding: 100px 200px;
+  position: relative;
+  text-align: center;
+  top: -66px;
+  padding-bottom: 30px;
+  padding-top: 84px;
+  z-index:2;
+}
+
+.subscri__shape--1 {
+    bottom: -12px;
+    left: -73px;
+    position: absolute;
+}
+.subscri__shape--2 {
+	bottom: -32%;
+	position: absolute;
+	right: -7%;
+}
+.fd__subscribe__area {
+    overflow: hidden;
+}
+.subscribe--2 .subscribe__inner .enter__email__address input {
+	background: #fff none repeat scroll 0 0;
+	color: #444444;
+}
+.subscribe__inner.subscribe--3 .enter__email__address input {
+	@include flex-basis(80.5%);
+}
+
+.subs__address__content{
+	margin-top: 50px;
+	.subs__address{
+		text-align: left;
+		.sbs__address__icon{
+			padding-right: 20px;
+			i{
+			color: #ffffff;
+    		font-size: 36px;	
+			}
+		}
+		.subs__address__details{
+			p{
+				color: #ffffff;
+    			font-size: 14px;
+				a{
+					color: #ffffff;
+				    font-size: 14px;
+				    transition: all 0.3s ease 0s;
+					&:hover{
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.subs--4 .fd__subscribe__area {
+  padding: 0 100px;
+}
+.subs--4 .subscribe__inner.subscribe--3 {
+  padding: 84px 100px 30px;
+}
+.subs--4 .subscribe__inner .enter__email__address input {
+  height: 60px;
+}
+.subs--4 .subscribe__inner .enter__email__address .sign__up {
+  height: 60px;
+  padding: 0 35px;
+  text-transform: uppercase;
+}
+
+
+@media #{$lg-layout}{
+.subscribe__inner.subscribe--3 {
+  padding: 84px 100px 30px;
+}
+
+
+	
+	
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}
+
+
+/*------------------------------
+	Banner Area
+--------------------------------*/ 
+
+.banner {
+    position: relative;
+    &:hover a{
+    	opacity: 1;
+    }
+    &::before{
+		background: rgba(213, 12, 13, 0.6) none repeat scroll 0 0;
+		content: "";
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		transform: scale(0);
+		transform-origin: 0 0 0;
+		transition: all 0.5s ease 0s;
+		width: 100%;
+    }
+    &::after{
+    	background: rgba(213, 12, 13, 0.6) none repeat scroll 0 0;
+		content: "";
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		transform: scale(0);
+		transform-origin: 0 0 0;
+		@include transition(0.5s);
+		width: 100%;
+    }
+    a{
+    	left: 50%;
+	    opacity: 0;
+	    position: absolute;
+	    top: 50%;
+	    transform: translateX(-50%) translateY(-50%);
+	    @include transition(0.5s);
+	    z-index: 1;
+    	i{
+    		color: #fff;
+    		font-size: 60px;
+    	}
+    }
+}
+
+@media #{$lg-layout}{
+
+	
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}
+
+/*------------------------------
+	Banner Style Two
+--------------------------------*/ 
+
+.banner--2{
+	margin-top: 40px;
+    position: relative;
+	.banner__thumb{
+		a{
+			display:block;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.banner__hover__action{
+		position: absolute;
+	    text-align: center;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    width: 100%;
+	    z-index: 9;
+
+		&.banner__left__bottom{
+			bottom: 30px;
+			left: 30px;
+			text-align: left;
+			top: auto;
+			transform: translate(0px);
+			width: auto;
+		}
+		&.banner__left__top{
+			left: 30px;
+		    text-align: left;
+		    top: 30px;
+		    transform: translate(0px);
+		    width: auto;
+		}
+		&.banner__right__bottom{
+			bottom: 30px;
+		    left: auto;
+		    right: 30px;
+		    top: auto;
+		    transform: translateY(0px);
+		    width: auto;
+		}
+		.banner__hover__inner{
+			h4{
+				color: #fc892c;
+			    font-size: 18px;
+			    font-style: italic;
+			    font-weight: 400;
+			    line-height: 18px;
+			    text-transform: uppercase;
+			}
+			h2{
+				color: #713311;
+			    font-size: 26px;
+			    font-weight: 900;
+			    text-transform: capitalize;
+			    &.pink-text {
+				    color: #e61853;
+				    font-size: 36px;
+				    text-transform: uppercase;
+				}
+			}
+			p{
+				color: #444444;
+			    font-family: $heading-font;
+			    font-size: 14px;
+			    font-weight: 700;
+			    margin-top: 3px;
+			}
+			span{
+				color: #444444;
+			    display: inline-block;
+			    font-family: $heading-font;
+			    font-size: 40px;
+			    font-weight: 700;	
+			}
+		}
+	}
+}
+
+
+.banner__hover__inner h2
+.banner__left__top p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.banner__right__bottom p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 7px;
+}
+// Hover Effect
+
+.banner--2{
+	position: relative;
+	z-index:3;
+}
+.banner__thumb a{
+	position: relative;
+	z-index: 1;
+}
+.banner__thumb a::before,
+.banner__thumb a::after{
+    background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transform-origin: 0 0 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.banner__thumb a::after {
+    transform-origin: 100% 100% 0;
+}
+.banner--2:hover .banner__thumb a::before,
+.banner--2:hover .banner__thumb a::after {
+    transform: scale(1);
+}
+
+
+@media #{$lg-layout}{
+
+	
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

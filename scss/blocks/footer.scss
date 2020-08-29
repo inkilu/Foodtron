@@ -1,0 +1,309 @@
+@import "../variables";
+@import "../mixins";
+/*======= Footer Styles =======*/
+
+/*----------------------
+	Footer Area
+------------------------*/ 
+
+.footer{
+	&.gallery {
+	    padding-left: 45px;
+	    padding-right: 45px;
+	}
+	.ftr__title {
+	    color: #e4e5e9;
+	    font-size: 26px;
+	    font-weight: 400;
+	    line-height: 24px;
+	    padding-bottom: 24px;
+	    position: relative;
+	    text-transform: capitalize;
+	    &::after {
+		    background-image: url("images/icon/shape/3.png");
+		    background-repeat: no-repeat;
+		    background-size: auto auto;
+		    bottom: 0;
+		    content: "";
+		    height: 8px;
+		    left: 0;
+		    position: absolute;
+		    width: 47px;
+		}
+	}
+	.footer__inner{
+		margin-top: 57px;
+		.ftr__details{
+			p{
+
+			}
+		}
+	}
+
+}
+
+.copyright .copyright__inner .cpy__right--left p {
+  color: #333333;
+  font-size: 14px;
+}
+
+.copyright.bg__cat--7 .copyright__inner .cpy__right--left p a {
+  color: #333333;
+}
+
+
+.copyright .copyright__inner .cpy__right--left p a {
+  color: #fff;
+  font-size: 14px;
+}
+
+
+.footer--2 .copyright .copyright__inner .cpy__right--left p {
+  color: #333333;
+}
+
+.ftr__address {
+    @include flexbox();
+}
+.sm__gallery__list {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+    li{
+		flex-basis: 50%;
+	    margin-bottom: 5px;
+	    padding-left: 2.5px;
+	    padding-right: 2.5px;
+    }
+    a{
+    	display: block;
+    	position: relative;
+    	&::before {
+		    background: #000 none repeat scroll 0 0;
+		    content: "";
+		    height: 100%;
+		    left: 0;
+		    opacity: 0.5;
+		    position: absolute;
+		    top: 0;
+		    transition: all 0.5s ease 0s;
+		    width: 100%;
+		}
+		&:hover::before {
+    		opacity: 0;
+		}
+    	img{
+    		width: 100%;
+    	}
+    }
+}
+
+.ftr__details{
+	p{
+		color: #e4e5e9;
+	    font-size: 14px;
+	    line-height: 24px;
+	}
+}
+
+.ftr__address__icon {
+    padding-right: 14px;
+    i{
+	    color: #ffffff;
+	    font-size: 20px;	
+    }
+}
+.frt__address__details{
+	p{
+		color: #ffffff;
+		a{
+			color: #ffffff;
+	    	font-size: 14px;	
+		}
+	}
+}
+.ftr__address__inner .ftr__address + .ftr__address {
+    margin-top: 13px;
+}
+.ftr__address__inner {
+    margin-top: 18px;
+}
+.social__icon{
+	li{
+		display: inline-block;
+		& + li{
+			margin-left: 10px;
+		}
+		a{
+			i{
+			border: 1px solid #8a8a8a;
+		    color: #ffffff;
+		    display: block;
+		    font-size: 15px;
+		    line-height: 30px;
+		    text-align: center;
+		    transition: all 0.5s ease 0s;
+		    width: 30px;
+		    &:hover{
+				background: #d50c0d none repeat scroll 0 0;
+			    border: 1px solid #d50c0d;
+			    color: #fff;
+		    	}	
+			}
+		}
+	}
+}
+
+.ftr__address__inner {
+    margin-bottom: 32px;
+}
+.opening__time__list li {
+    color: #ffffff;
+    font-weight: 300;
+}
+.opening__time__list li + li {
+    padding-top: 8px;
+}
+.single__sm__post{
+	@include flexbox();
+	@include justify-content(space-between);
+	.sin__post__thumb {
+   		min-width: 70px;
+	}
+	.sin__post__details{
+		padding-left: 20px;
+		h6{
+			a{
+				color: #e4e5e9;
+			    font-family: $body-font;
+			    font-size: 16px;
+			    font-weight: 700;
+			}
+		}
+		p{
+			color: #e4e5e9;
+		    font-size: 14px;
+		    line-height: 24px;
+		}
+	}
+
+}
+
+.lst__post__list .single__sm__post + .single__sm__post {
+    margin-top: 20px;
+}
+.opening__time__list li span {
+  padding: 0 22px;
+}
+.copyright{
+	.copyright__inner {
+		@include align-items(center);
+	    @include flexbox();
+	    height: 60px;
+	    @include justify-content(space-between);
+	    .cpy__right--left{
+	    	p{
+				color: #ffffff;
+				font-size: 14px;	
+	    	}
+	    }
+	}
+}
+
+
+
+.footer--4 .copyright .copyright__inner {
+  height: 82px;
+  padding: 0 85px;
+}
+.footer--4 .copyright .copyright__inner .cpy__right--left p {
+  color: #666666;
+  font-size: 14px;
+}
+
+
+.single__sm__post .sin__post__details h6 a:hover,
+.frt__address__details p a:hover{
+	color: $theme-color;
+}
+
+
+// Responsive Css
+
+
+
+@media #{$lg-layout}{
+
+.footer .ftr__title {
+  font-size: 20px;
+}
+.footer.gallery {
+  padding-left: 0;
+  padding-right: 0;
+}
+.single__sm__post .sin__post__details {
+  padding-left: 10px;
+}
+.single__sm__post .sin__post__details h6 a {
+  font-size: 13px;
+}
+.single__sm__post .sin__post__details p {
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+}
+
+@media #{$md-layout}{
+
+
+
+
+
+
+
+
+
+}
+@media #{$sm-layout}{
+
+.footer.gallery {
+  padding-left: 0;
+  padding-right: 0;
+}
+.sm__gallery__list li {
+  flex-basis: 33.33%;
+}
+.single__sm__post {
+  @include justify-content(flex-start)
+}
+.copyright .copyright__inner .cpy__right--left p {
+  font-size: 13px;
+}
+
+
+
+
+
+
+}
+
+@media #{$xs-layout}{
+
+.copyright .copyright__inner {
+  flex-wrap: wrap;
+  height: 100px;
+}
+
+
+
+
+
+}
+

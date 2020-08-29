@@ -1,0 +1,313 @@
+@import "../variables";
+@import "../mixins";
+/*=======  Our Blog List Area =======*/
+
+
+
+.food__blog__list__wrapper{
+	margin-top: -70px;
+	padding: 0 200px;
+}
+
+.food__bl__list{
+	margin-top: 70px;
+	.fd__list__thumb{
+		a{
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.fd__list__inner{
+		background: #fafafa none repeat scroll 0 0;
+    	padding: 40px;
+		.fd__list__details{
+			h2{
+				color: #262626;
+			    font-family: $body-font;
+			    font-weight: 600;
+			    margin-bottom: 8px;
+			}
+			p{
+				color: #666666;
+			    line-height: 25px;
+			    margin-top: 21px;
+
+			}
+		}
+	}
+}
+
+.list__meta{
+	li{
+		color: #666666;
+    	font-size: 13px;
+		a{
+			color: #666666;
+		    font-size: 13px;
+		    transition: all 0.3s ease 0s;
+		    &:hover{
+		    	color: $theme-color;
+		    }
+		}
+	}
+}
+
+.list__meta li + li {
+    margin-left: 13px;
+    padding-left: 13px;
+    position: relative;
+}
+.list__meta li + li::before {
+    background: #666666 none repeat scroll 0 0;
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+}
+
+
+
+
+
+
+
+.blog-list-right-sidebar .food__bl__list .fd__list__inner {
+	background: transparent none repeat scroll 0 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.bl__list__btn {
+	margin-top: 40px;
+	.food__btn.btn--transparent{
+		background: transparent none repeat scroll 0 0;
+		border: 1px solid #9f9f9f;
+		border-radius: 0;
+		color: #191919;
+		font-family: $body-font;
+		font-size: 16px;
+		font-weight: 400;
+		height: 42px;
+		line-height: 40px;
+		padding: 0 33px;
+		text-transform: uppercase;
+		&:hover{
+			color: #fff;
+			border: 1px solid #d50c0d ;
+		}
+	}
+
+
+}
+
+.bl__list__btn .food__btn::before {
+	background: #d50c0d none repeat scroll 0 0;
+	border-radius: 0;
+}
+.blog-list-right-sidebar .food__bl__list .fd__list__inner .fd__list__details p {
+  color: #333333;
+  line-height: 25px;
+  margin-top: 21px;
+  line-height: 30px;
+  padding-right: 8%;
+}
+
+
+.blog-list-right-sidebar .title__with__icon {
+    padding-left: 60px;
+    position: relative;
+}
+.blog-list-right-sidebar .title__with__icon::before {
+    background: #313131 none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #fff;
+    content: "\e69b";
+    font-family: Pe-icon-7-stroke;
+    font-size: 20px;
+    height: 40px;
+    left: 0;
+    line-height: 39px;
+    position: absolute;
+    text-align: center;
+    width: 40px;
+}
+.blog-list-right-sidebar .food__bl__list .fd__list__inner .fd__list__details h2 {
+  margin-bottom: 16px;
+}
+
+.fd__list__thumb {
+    position: relative;
+}
+.img__with__icon {
+    left: 40px;
+    position: absolute;
+    top: 40px;
+}
+.img__with__icon span {
+    background: #313131 none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+// Blog Activation
+
+.blog__activation{
+	position:relative;
+}
+.blog__activation .owl-nav div{
+	left: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.owl-theme .owl-nav {
+	margin-top: 0;
+}
+.blog__activation .owl-nav div.owl-next{
+	left: auto;
+    right: 40px;
+}
+.blog__activation.owl-theme .owl-nav [class*="owl-"] {
+	background: #fff none repeat scroll 0 0;
+	border-radius: 100%;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	height: 50px;
+	line-height: 61px;
+	margin: 0;
+	padding: 0;
+	width: 50px;
+}
+
+.blog__activation .owl-nav div i {
+	color: #010101;
+	font-size: 32px;
+}
+
+.fd__list__thumb.bl__list__iframe {
+	height: 434px;
+}
+
+.fd__list__thumb.bl__list__iframe iframe {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+@media #{$xlg-layout}{
+
+
+
+
+
+}
+
+@media #{$lg-layout}{
+	.blog-list-right-sidebar .food__bl__list .fd__list__inner .fd__list__details h2 {
+	  font-size: 25px;
+	}
+
+
+.food__blog__list__wrapper {
+  padding: 0 135px;
+}
+
+
+
+
+	
+}
+
+@media #{$md-layout}{
+
+.food__blog__list__wrapper {
+  padding: 0 80px;
+}
+
+
+
+
+
+}
+@media #{$sm-layout}{
+
+.food__blog__list__wrapper {
+  padding: 0;
+}
+
+
+
+
+}
+
+@media #{$xs-layout}{
+
+.blog-list-right-sidebar .food__bl__list .fd__list__inner .fd__list__details h2 {
+  font-size: 20px;
+  line-height: 31px;
+}
+.food__bl__list .fd__list__inner {
+  padding: 40px 10px;
+}
+.food__bl__list .list__meta {
+  display: block !important;
+}
+.list__meta li + li {
+  margin-left: 0;
+  padding-left: 0;
+}
+.list__meta li + li::before {
+  display: none;
+}
+.blog__activation .owl-nav div {
+  left: 0;
+}
+.blog__activation .owl-nav div.owl-next {
+  right: 0px;
+}
+.food__blog__list__wrapper {
+  padding: 0;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
