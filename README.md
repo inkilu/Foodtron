@@ -1,2 +1,3 @@
 # foodtron
-Prototype Alpha v0.0.1
+Still in early stages of development
+nothing much is done.
