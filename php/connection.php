@@ -10,7 +10,7 @@ echo "Success";
 }
 
 else{
-    echo "Not Success" + mysqli_error();
+    echo "Not Success" + mysqli_error($sonn);
 }
 
 
