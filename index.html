@@ -1771,15 +1771,15 @@
                 </ul>
                 <div class="accountbox__inner tab-content" id="myTabContent">
                     <div class="accountbox__login tab-pane fade show active" id="log" role="tabpanel" aria-labelledby="log-tab">
-                        <form action="#">
+            <!--LOGIN-->  <form action="php/login.php" method="POST" name="loginform" id="loginform">
                             <div class="single-input">
-                                <input class="cr-round--lg" type="text" placeholder="User name or email">
+                                <input class="cr-round--lg" type="text" name="usernmeoremail" placeholder="User name or email">
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="password" placeholder="Password">
+                                <input class="cr-round--lg" type="password" name="passwrdlog" placeholder="Password">
                             </div>
                             <div class="single-input">
-                                <button type="submit" class="food__btn"><span>Go</span></button>
+                                <button type="submit" class="food__btn" name="submitlogin"><span>Go</span></button>
                             </div>
                             <div class="accountbox-login__others">
                                 <h6>Or login with</h6>
@@ -1794,21 +1794,21 @@
                         </form>
                     </div>
                     <div class="accountbox__register tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <form action="#">
+        <!--REGISTER-->     <form action="php/register.php" method="POST" name="registerform" id="registerform">
                             <div class="single-input">
-                                <input class="cr-round--lg" type="text" placeholder="User name">
+                                <input class="cr-round--lg" type="text" name="usernme" placeholder="User name" name="">
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="email" placeholder="Email address">
+                                <input class="cr-round--lg" type="email" name="email_" placeholder="Email address">
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="password" placeholder="Password">
+                                <input class="cr-round--lg" type="password" name="passwrd" placeholder="Password">
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="password" placeholder="Confirm password">
+                                <input class="cr-round--lg" type="password" name="passwrd1" placeholder="Confirm password">
                             </div>
                             <div class="single-input">
-                                <button type="submit" class="food__btn"><span>Sign Up</span></button>
+                                <button type="submit" name="registersubmit" class="food__btn"><span>Sign Up</span></button>
                             </div>
                         </form>
                     </div>
