@@ -1835,7 +1835,7 @@ a#scrollUp {
   display: -ms-flexbox;
   display: flex;
   height: 100px; }
-
+  
 .header__right .log__in a i {
   color: #666666;
   font-size: 20px; }
@@ -7540,6 +7540,7 @@ div.slide__pizza img {
   width: 100%;
   left: 0;
   top: 0;
+  white-space: nowrap;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out 0s;
   -moz-transition: all 0.5s ease-in-out 0s;
@@ -7548,10 +7549,12 @@ div.slide__pizza img {
   transition: all 0.5s ease-in-out 0s;
   visibility: hidden; }
   .accountbox-wrapper.is-visible {
+    white-space: nowrap;
     visibility: visible;
     opacity: 1;
     z-index: 9991; }
   .accountbox-wrapper .body-overlay {
+    white-space: nowrap;
     position: fixed;
     left: 0;
     top: 0;
@@ -7608,6 +7611,7 @@ div.slide__pizza img {
         color: #d50c0d; }
 
 .accountbox {
+  white-space: nowrap;
   background: #e3e3e3;
   position: absolute;
   z-index: 23;
