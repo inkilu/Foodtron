@@ -1,0 +1,7 @@
+.inktext{
+    text-align:left;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    position: absolute;
+    left: -70px;
+}
