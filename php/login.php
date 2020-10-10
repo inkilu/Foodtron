@@ -1,13 +1,16 @@
 <?php
 require('connection.php');
+session_start();
 if(isset($_POST['usernmeoremail'])){
+    
    $uname=$_POST['usernmeoremail'];
    $pswrd=$_POST['passwrdlog'];
-
+  $_SESSION['sess']=$uname;
    $sql = "select * from registration where username='".$uname."'AND password='".$pswrd."' limit 1";
    $result=mysqli_query($conn,$sql);
   
    if(mysqli_num_rows($result)== 1){
+  
     echo " You Have Successfully Logged in";
     exit();
 }
