@@ -96,22 +96,21 @@ session_start();
                         </div>
                         <div class="col-lg-1 col-sm-4 col-md-4 order-2 order-lg-3">
                             <div class="header__right d-flex justify-content-end">
-                                <div class="log__in"> 
-                                    <a class="accountbox-trigger" href="#">
+                            <div class="log__in"> 
+                                    <a class="" href="reg/loginfrm.php">
                                         <div class="inktext">
-                                          <h5><?php 
+                                        <h5><?php 
                                           if(isset($_SESSION['sess'])){
                                           echo"Hello,".$_SESSION['sess'];
                                           }
                                           else{
-                                              echo "Sign in";
+                                              echo "Login";
                                           }
                                           ?></h5> <!-- login status/User Status-->
                                         </div>
-
-
-                                        <i class="zmdi zmdi-account-o"></i></a>
+                                        </a>
                                 </div> 
+                                        
                                 <div class="shopping__cart">
                                     <a class="minicart-trigger" href="#"><i class="zmdi zmdi-shopping-basket"></i></a>
                                     <div class="shop__qun">
@@ -1792,10 +1791,10 @@ session_start();
                     <div class="accountbox__login tab-pane fade show active" id="log" role="tabpanel" aria-labelledby="log-tab">
             <!--LOGIN.-->  <form action="php/login.php" method="POST" name="loginform" id="loginform">
                             <div class="single-input">
-                                <input class="cr-round--lg" type="text" name="usernmeoremail" placeholder="User name or email">
+                                <input class="cr-round--lg" type="text" name="usernmeoremail" placeholder="User name or email" required>
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="password" name="passwrdlog" placeholder="Password">
+                                <input class="cr-round--lg" type="password" name="passwrdlog" placeholder="Password" required>
                             </div>
                             <div class="single-input">
                                 <button type="submit" class="food__btn" name="submitlogin"><span>Go</span></button>
@@ -1815,16 +1814,16 @@ session_start();
                     <div class="accountbox__register tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <!--REGISTER-->     <form action="php/register.php" method="POST" name="registerform" id="registerform">
                             <div class="single-input">
-                                <input class="cr-round--lg" type="text" name="usernme" placeholder="User name" name="">
+                                <input class="cr-round--lg" type="text" name="usernme" placeholder="User name" required>
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="email" name="email_" placeholder="Email address">
+                                <input class="cr-round--lg" type="email" name="email_" placeholder="Email address" required>
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="password" name="passwrd" placeholder="Password">
+                                <input class="cr-round--lg" type="password" name="passwrd" placeholder="Password" required>
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="password" name="passwrd1" placeholder="Confirm password">
+                                <input class="cr-round--lg" type="password" name="passwrd1" placeholder="Confirm password" required>
                             </div>
                             <div class="single-input">
                                 <button type="submit" name="registersubmit" class="food__btn"><span>Sign Up</span></button>
