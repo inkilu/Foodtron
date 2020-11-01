@@ -7613,7 +7613,7 @@ div.slide__pizza img {
 .accountbox {
   white-space: nowrap;
   background: #e3e3e3;
-  position: absolute;
+  position: relative;
   z-index: 23;
   left: 50%;
   top: 50%;
