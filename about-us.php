@@ -43,7 +43,7 @@ session_start();
                     <div class="row">
                         <div class="col-lg-2 col-sm-4 col-md-6 order-1 order-lg-1">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="images/logo/foody.png" alt="logo images">
                                 </a>
                             </div>
@@ -52,7 +52,7 @@ session_start();
                             <div class="main__menu__wrap">
                                 <nav class="main__menu__nav d-none d-lg-block">
                                     <ul class="mainmenu">
-                                        <li class="drop"><a href="index.html">Home</a>
+                                        <li class="drop"><a href="index.php">Home</a>
                                            <!-- <ul class="dropdown__menu">
                                                 <li><a href="index.html">Home Food Delivery</a></li>
                                                 <li><a href="index-2.html">Home Pizza Delivery</a></li>
@@ -61,7 +61,7 @@ session_start();
                                             </ul>-->
                                         </li>
                                         <li><a href="about-us.html">About</a></li>
-                                        <li class="drop"><a href="menu-grid.html">Menu</a>
+                                        <li class="drop"><a href="menu-grid.php">Menu</a>
                                           <!--  <ul class="dropdown__menu">
                                                 <li><a href="menu-grid.html">Menu Grid</a></li>
                                                 <li><a href="menu-list.html">Menu List</a></li>
