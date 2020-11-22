@@ -244,7 +244,7 @@ session_start();
                                     </a>
                                 </div>
                                 <div class="food__title">
-                                    <h2><a href="menu-details.html">Breakfast Items</a></h2>
+                                    <h2><a href="menu-list.html">Breakfast Items</a></h2>
                                 </div>
                             </div>
                         </div>
