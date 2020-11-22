@@ -5,3 +5,9 @@
     position: absolute;
     left: -70px;
 }
+
+.inkimg{
+    background-image: url('images/bg/masala.jpg');
+    background-repeat: initial;
+    background-position: center;
+}
