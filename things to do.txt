@@ -1,2 +1,0 @@
-1. remove blog drop down from all pages
-2. remove menu grid and menu details [keep menu details for fetch result printing]
