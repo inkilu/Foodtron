@@ -1,0 +1,144 @@
+@import "../variables";
+@import "../mixins";
+/*======= Header Styles =======*/
+.htc__header{
+	position: relative;
+    z-index: 99;
+}
+
+.mainmenu__wrap{
+	.logo{
+		a{
+			height: 100px;
+			@include align-items(center);
+			@include flexbox();
+		}
+	}
+}
+
+.log__in a,
+.shopping__cart a {
+	@include align-items(center);
+	@include flexbox();
+	height: 100px;
+}
+.header__right{
+	.log__in{
+		a{
+			i{
+				color: #666666;
+    			font-size: 20px;
+			}
+		}
+	}
+	.shopping__cart{
+		margin-left: 13px;
+	    padding-left: 13px;
+	    padding-right: 12px;
+	    position: relative;
+	    &::before {
+		    background: $theme-color;
+		    content: "";
+		    height: 12px;
+		    left: 0;
+		    position: absolute;
+		    top: 45%;
+		    width: 1px;
+		}
+		a{
+			i{
+				color: #666666;
+    			font-size: 20px;
+			}
+		}
+		.shop__qun{
+			background: #d50c0d none repeat scroll 0 0;
+		    border-radius: 100%;
+		    color: #fff;
+		    height: 22px;
+		    line-height: 19.5px;
+		    position: absolute;
+		    right: 2px;
+		    text-align: center;
+		    top: 23%;
+		    width: 22px;
+		    span{
+		    	font-size: 12px;
+    			font-weight: 700;
+		    }
+		}
+	}
+}
+
+.sticky__header.is-sticky {
+	animation: 0.4s ease-in-out 0s normal both 1 running fadeInDown;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	left: 0;
+	position: fixed;
+	top: 0;
+	transition: box-shadow 0.5s ease-in-out 0s;
+	width: 100%;
+	z-index: 998;
+	background: #fff;
+}
+
+
+
+
+
+
+@media #{$lg-layout}{
+
+	
+}
+
+@media #{$md-layout}{
+	.header__right{
+	  position: relative;
+	  z-index: 2;
+	  left: 56px;
+	}
+	.logo {
+	  position: relative;
+	  z-index: 99;
+	}
+
+
+
+
+}
+@media #{$sm-layout}{
+	.header__right {
+		left: 114px;
+		position: relative;
+		z-index: 2;
+	}
+	.logo {
+	  position: relative;
+	  z-index: 99;
+	}
+
+
+
+
+}
+
+@media #{$xs-layout}{
+	.header__right {
+	  position: relative;
+	  z-index: 2;
+	  left: 56px;
+	}
+	.logo {
+	  position: relative;
+	  z-index: 99;
+	}
+
+
+
+
+}
+
+
+
+

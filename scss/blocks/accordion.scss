@@ -1,0 +1,129 @@
+
+
+@import "../variables";
+@import "../mixins";
+
+
+/*======= Accordion Area =======*/
+
+
+.acc-header h5 a {
+	border-bottom: 1px solid #eeeeee;
+    color: #333333;
+    display: block;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 600;
+    height: auto;
+    padding: 26px 75px 27px 30px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+.food_accordion .card {
+	border: 1px solid #eeeeee;
+	border-radius: 0;
+}
+.food_accordion .card-body {
+	color: #666666;
+	flex: 1 1 auto;
+	font-size: 18px;
+	line-height: 32px;
+	padding: 30px 30px 30px 40px;
+	position: relative;
+	z-index: 2;
+	border-bottom: 3px solid #60ba62;
+}
+.food_accordion .card-body::before {
+	background-image: url("images/shape/2.jpg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	bottom: 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	background-size: cover;
+}
+
+.food_accordion .card + .card {
+	margin-top: 50px;
+}
+.acc-header h5 a::after {
+	content: "\f19c";
+	font-family: Material-Design-Iconic-Font;
+	position: absolute;
+	right: 0;
+	width: 75px;
+	text-align: center;
+	color: #c0c0c0;
+	font-size: 24px;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+.acc-header h5 a::before {
+  background: #eee none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 75px;
+  top: 0;
+  width: 1px;
+}
+.acc-header h5 a.collapsed::after {
+	color: #333;
+}
+
+
+@media #{$lg-layout}{
+.acc-header h5 a {
+  font-size: 20px;
+}
+
+
+
+
+
+	
+}
+
+@media #{$md-layout}{
+.acc-header h5 a {
+  font-size: 15px;
+}
+
+
+
+}
+@media #{$sm-layout}{
+
+.acc-header h5 a {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+
+
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

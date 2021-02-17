@@ -1,0 +1,242 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*======= About Us =======*/
+
+
+.food__container {
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee;
+    margin-right: -30px;
+    padding: 92px 43px 92px 40px;
+    .food__inner{
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 23px;
+        h2{
+            color: #333333;
+            font-size: 26px;
+        }
+        p{
+            color: #959595;
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 14px;
+        }
+    }
+    .food__details{
+        margin-bottom: 22px;
+        margin-top: 25px;
+        p{
+           font-size: 14px; 
+        }
+    }
+}
+
+.food__tab{
+    .food__nav{
+        margin: 0;
+        a{
+            border: 0 none;
+            color: #333333;
+            display: block;
+            font-family: Open Sans;
+            font-size: 14px;
+            height: auto;
+            line-height: 34px;
+            margin: 0;
+            padding: 0;  
+        }
+    }
+}
+
+.about__video__inner{
+    border-bottom: 1px solid #eaeaeb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .about__video__thumb{
+        position: relative;
+        z-index: 2;
+        &::before {
+            background: #000 none repeat scroll 0 0;
+            content: "";
+            height: 100%;
+            opacity: 0.3;
+            position: absolute;
+            width: 100%;
+        }
+        img{
+            width: 100% !important;
+        }
+        a{
+            &.video-play-button{
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                img{
+                    width: auto !important;
+                }
+            }
+        }
+            }
+    .about__video__content{
+        background: #fff none repeat scroll 0 0;
+        border-left: 1px solid #eaeaeb;
+        border-right: 1px solid #eaeaeb;
+        height: 52px;
+        line-height: 52px;
+        text-align: center;
+        span{
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: #dddddd #dddddd currentcolor;
+            border-image: none;
+            border-style: solid solid none;
+            border-width: 1px 1px 0;
+            color: #333333;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0 20px;
+
+        }
+    }
+}
+
+
+
+
+
+
+
+@media #{$lg-layout}{
+
+.food__container {
+  padding: 31px 34px 28px 23px;
+}
+.food__container .food__inner h2 {
+  font-size: 23px;
+}
+
+
+    
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+    
+.food__container {
+  padding: 50px 30px 50px 30px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+// Owl Activation
+
+
+.about__video__activation.owl-carousel .owl-item img {
+  margin: auto;
+  width: auto;
+}
+.about__video__activation.owl-carousel .owl-item img {
+  display: inline-block;
+}
+
+.about__video__activation{
+	position: relative;
+	
+}
+
+.about__video__activation .owl-nav div{
+	bottom: -3px;
+    left: 25px;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.about__video__activation.owl-theme .owl-nav {
+	margin-top: 0;
+}
+.about__video__activation .owl-nav div i{
+	color: #959595;
+    font-size: 23px;
+}
+.about__video__activation .owl-nav div i:hover{
+	color: #d50c0d;
+	transition: 0.3s;
+}
+.about__video__activation .owl-nav div.owl-next{
+	left: auto;
+    right: 25px;
+}
+.about__video__activation.owl-theme .owl-nav [class*="owl-"] {
+	background: transparent none repeat scroll 0 0;
+	border-radius: 0;
+	color: #000;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+.about__video__activation.owl-theme .owl-nav [class*="owl-"]:hover {
+	background: transparent none repeat scroll 0 0;
+}
+
+
+
+// Others Css
+
+
+.about__thumb img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

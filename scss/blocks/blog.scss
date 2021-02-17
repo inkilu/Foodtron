@@ -1,0 +1,135 @@
+@import "../variables";
+@import "../mixins";
+/*--------------------------
+	Blog Arae
+---------------------------*/
+
+.blog {
+    box-shadow: 0 0 10px rgba(96, 186, 98, 0.1) inset, 0 0 0 #000;
+    margin-top: 40px;
+    text-align: center;
+    transition: box-shadow 1s ease 0s;
+    .blog__details{
+    	padding: 35px 13px;
+        padding-bottom: 43px;
+    	h2{
+    	color: #3a3a3a;
+        font-size: 26px;
+        margin-bottom: 6px;
+        text-transform: capitalize;
+    	}
+    	span{
+    		color: #959595;
+    		font-size: 14px;
+    	}
+    	p{
+		    color: #959595;
+            font-size: 14px;
+            margin-top: 9px;
+            padding: 0 5%;
+    	}
+    }
+    .blog__thumb{
+    	overflow: hidden;
+    	a{
+    		display: block;
+    		img{
+    			@include transition(0.5s);
+                width:100%;
+    		}
+    	}
+    }
+}
+.blog__btn {
+  margin-top: 29px;
+}
+
+
+.blog__thumb a,
+.banner{
+    position: relative;
+    display:block;
+}
+
+.banner:hover::before,
+.banner:hover::after {
+    transform: scale(1);
+}
+
+
+
+.banner::after {
+    transform-origin: 100% 100% 0;
+}
+
+
+.blog__thumb a::before {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 5;
+}
+.blog:hover .blog__thumb a img {
+    transform: scale(1.2);
+    z-index: 1;
+}
+.blog:hover .blog__thumb a::before {
+    opacity: 0;
+}
+.blog__thumb a img{
+    transition: 0.3s;
+}
+.blog__btn .food__btn {
+  padding: 0 26px;
+}
+.blog--2 .blog__btn .food__btn.grey--btn {
+  color: #959595;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 27px;
+}
+.blog--2 .blog__btn .food__btn.grey--btn:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+
+@media #{$lg-layout}{
+
+    
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

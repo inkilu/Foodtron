@@ -1,0 +1,19 @@
+.inktext{
+    text-align:left;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    position: absolute;
+    left: -70px;
+}
+
+
+.inkimg{
+    background-image: url('images/bg/masala.jpg');
+    background-repeat: initial;
+    background-position: center;
+}
+.inkimc{
+    background-image: url('images/bg/drinks2.jpg');
+    background-repeat: initial;
+    background-position: center;
+}

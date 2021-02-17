@@ -1,0 +1,224 @@
+@import "../variables";
+@import "../mixins";
+/*=======  Our MEnu Grid Area =======*/
+
+
+
+.single__food__list{
+    margin-top: 40px;
+    .food__list__thumb{
+        @include flexbox();
+        min-width: 470px;
+        a{
+            display: block;
+            position: relative;
+            &::before {
+                background: #d50c0d none repeat scroll 0 0;
+                content: "";
+                height: 5px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 80px;
+                @include transition(0.5s);
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .food__list__inner{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding-left: 40px;
+        .food__list__details{
+            @include flex-basis(75%);
+            h2{
+                border-bottom: 1px dashed #6f6f6f;
+                color: #333333;
+                font-size: 26px;
+                margin-bottom: 17px;
+                padding-bottom: 22px;
+                position: relative;
+                text-transform: capitalize;
+                @include transition(0.5s);
+            }
+            p{
+                color: #959595;
+                font-size: 14px;
+                margin-bottom: 20px;
+
+            }
+        }
+        .food__rating{
+            @include flex-basis(20%);
+            @include align-self(flex-start);
+            padding-top: 29px;
+            .list__food__prize{
+                span{
+                    color: #d50c0d;
+                    display: inline-block;
+                    font-family: $heading-font;
+                    font-size: 50px;
+                    font-weight: 700;
+                    line-height: 45px;
+                    margin-bottom: 26px;
+                }
+            }
+        }
+    }
+}
+
+.single__food__list:hover .food__list__details h2 {
+  border-bottom: 1px dashed #f10;
+}
+.single__food__list:hover .food__list__thumb a::before {
+    width: 100%;
+}
+
+
+// Food Nav
+.food__nav{
+    border-bottom: 1px solid transparent;
+    margin-left: -3px;
+    margin-right: -3px;
+    a{
+        border: 1px dashed #dbdbdb;
+        color: #333333;
+        display: inline-block;
+        font-family: $heading-font;
+        font-size: 18px;
+        font-weight: 400;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 3px;
+        padding: 0 24px;
+        @include transition(0.5s);
+        &:hover{
+           color: #d50c0d; 
+        } 
+    }
+}
+
+
+@media #{$lg-layout}{
+
+.single__food__list .food__list__thumb {
+  flex-basis: 48%;
+}  
+.single__food__list .food__list__inner {
+  flex-basis: 60%;
+  padding-left: 20px;
+}
+.single__food__list .food__list__inner .food__list__details h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  padding-bottom: 14px;
+}
+.single__food__list .food__list__inner .food__list__details p {
+  font-size: 13px;
+  margin-bottom: 11px;
+}
+.food__rating .rating li {
+  display: inline-block;
+  margin: 0;
+}
+
+
+
+
+
+}
+
+@media #{$md-layout}{
+
+.single__food__list {
+  display: block !important;
+}
+.single__food__list .food__list__thumb {
+  display: block;
+}
+.single__food__list .food__list__inner {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+
+
+
+
+
+}
+@media #{$sm-layout}{
+
+.single__food__list {
+  display: block !important;
+}
+.single__food__list .food__list__thumb {
+  display: block;
+}
+.single__food__list .food__list__inner {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+
+
+
+
+
+}
+
+@media #{$xs-layout}{
+
+
+.single__food__list .food__list__inner {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: block !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.single__food__list .food__list__inner .food__list__details h2 {
+  font-size: 22px;
+}
+.single__food__list .food__list__inner .food__rating {
+  display: none;
+}
+.food__nav a {
+  padding: 0 20px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

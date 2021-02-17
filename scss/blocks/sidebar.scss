@@ -1,0 +1,457 @@
+
+@import "../variables";
+@import "../mixins";
+
+
+/*======= Accordion Area =======*/
+
+
+
+
+
+
+
+
+
+.side__bl__details {
+    background: #fafafa none repeat scroll 0 0;
+    padding: 30px;
+}
+.side__bl__thumb img {
+    width: 100%;
+}
+.side__bl__details p {
+    color: #333333;
+    font-size: 14px;
+    padding-right: 27px;
+}
+.side__bl__details h4 {
+    color: #2f2f2f;
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 17px;
+    text-transform: capitalize;
+}
+.side__bl__details h6 {
+    color: #2f2f2f;
+    font-family: $body-font;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.bl__social__service {
+    margin-top: 14px;
+}
+.bl__social__service li + li {
+    margin-left: 30px;
+}
+.bl__social__service li a i {
+    color: #a0a0a0;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+}
+.bl__social__service li a:hover i {
+    color: #d50c0d;
+}
+.side__title {
+    border-bottom: 2px solid #f1f1f1;
+    color: #232323;
+    font-family: $body-font;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 39px;
+    padding-bottom: 22px;
+    position: relative;
+    text-transform: capitalize;
+}
+.side__title::before {
+    background: #6d6d6d none repeat scroll 0 0;
+    bottom: -2px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 50px;
+}
+.serch__box {
+    position: relative;
+}
+.serch__box input {
+    border: 1px solid #e4e4e4;
+    color: #b5b5b5;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 50px 0 20px;
+    width: 100%;
+}
+.serch__box a {
+    color: #b5b5b5;
+    font-size: 16px;
+    position: absolute;
+    right: 30px;
+    top: 46%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+.serch__box a:hover{
+    color: $theme-color;
+}
+.recent__post__thumb {
+}
+.recent__post__details {
+    padding-left: 16px;
+}
+.recent__post__details span {
+    color: #232323;
+    font-size: 12px;
+    font-weight: 600;
+}
+.recent__post__details h4 {
+    color: #646464;
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.recent__post__details h4 a {
+    color: #646464;
+    transition: all 0.5s ease 0s;
+}
+.recent__post__details h4 a:hover {
+    color: #d50c0d;
+}
+.single__recent__post {
+    margin-top: 30px;
+}
+.recent__post__wrap {
+}
+.food__category li a span {
+    float: right;
+}
+.food__category li a {
+    color: #646464;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+.food__category li {
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
+.food__category li + li {
+    border-top: 1px solid #e5e5e5;
+}
+.food__category li:first-child {
+    padding-top: 0;
+}
+.food__category li:last-child {
+    padding-bottom: 0;
+}
+.food__category li a:hover {
+    color: #d50c0d;
+}
+.single__comment h2 a {
+    color: #262626;
+    font-family: $body-font;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    transition: 0.3s;
+}
+.single__comment h2 a:hover{
+    color: $theme-color;
+}
+
+.single__comment h2 i {
+  color: #969696;
+  font-size: 20px;
+  padding-right: 13px;
+  line-height: 27px;
+}
+.single__comment h2 {
+  @include flexbox();
+}
+
+.comment__meta{
+    @include flexbox();
+    margin-top: 6px;
+    padding-left: 30px;
+    li{
+        color: #b7b7b7;
+        font-size: 12px;
+        a{
+            color: #b7b7b7;
+            display: inline-block;
+            font-size: 12px;
+            margin-left: 10px;
+            padding-left: 16px;
+            position: relative;
+            &::before {
+                background: #b7b7b7 none repeat scroll 0 0;
+                content: "";
+                height: 6px;
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 6px;
+            }
+        }
+    }
+}
+
+
+.food__comment .single__comment + .single__comment {
+  margin-top: 26px;
+}
+.sidebar__contact {
+    position: relative;
+}
+.sidebar__thumb img {
+    width: 100%;
+}
+.sidebar__details {
+    left: 13px;
+    position: absolute;
+    top: 50px;
+}
+.sidebar__details h4 {
+    color: #fc892c;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.sidebar__details h2 {
+    color: #f1486e;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.sidebar__details span {
+    color: #ff3300;
+    display: inline-block;
+    font-family: $heading-font;;
+    font-weight: 700;
+    margin-top: 4px;
+}
+.sidebar__con__btn {
+    bottom: 18px;
+    position: absolute;
+    right: 70px;
+}
+.sidebar__con__btn a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.sidebar__con__btn a i {
+    padding-left: 8px;
+}
+.sidebar__inbox {
+    position: relative;
+}
+.sidebar__inbox input {
+    border: 1px solid #e4e4e4;
+    color: #aaaaaa;
+    font-size: 14px;
+    height: 50px;
+    padding-left: 22px;
+    width: 100%;
+}
+.sidebar__inbox a {
+    background: #2c2c2c none repeat scroll 0 0;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 6px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+}
+.sidebar__inbox a i {
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.sidebar__inbox a:hover{
+    background: $theme-color;
+}
+.instagram__list{
+    margin-left: -2px;
+    margin-right: -2px;
+    li{
+        margin: 0 2px 4px;
+
+    }
+}
+
+
+
+.recent__twitter h6 a {
+    color: #262626;
+    font-family: $body-font;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+}
+.recent__twitter h6 a i {
+    color: #262626;
+    font-size: 20px;
+    padding-right: 13px;
+}
+.recent__twitter h6 {
+    margin-bottom: 8px;
+}
+.recent__twitter p {
+    color: #262626;
+    font-size: 14px;
+    font-weight: 700;
+}
+.twit__meta {
+    @include flexbox();
+    margin-top: 7px;
+}
+.twit__meta li {
+    color: #b7b7b7;
+    display: inline-block;
+    font-size: 12px;
+}
+.twit__meta li + li {
+    margin-left: 10px;
+    padding-left: 16px;
+    position: relative;
+}
+.twit__meta li + li::before {
+    background: #b7b7b7 none repeat scroll 0 0;
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+}
+.twitter__wrap .recent__twitter + .recent__twitter {
+    margin-top: 21px;
+}
+.recent__twitter h6 a:hover {
+    color: #d50c0d;
+}
+
+.var__social__net{
+    @include flexbox();
+    li{
+        a{
+            i{
+                background: #3c5998 none repeat scroll 0 0;
+                color: #ffffff;
+                font-size: 20px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                transition: all 0.3s ease 0s;
+                width: 50px;
+                &.fa-vimeo {
+                    background: #1da1f2 none repeat scroll 0 0;
+                }
+                &.fa-facebook {
+                    background: #bd081c none repeat scroll 0 0;
+                }
+                &.fa-instagram {
+                    background: #23b6ea none repeat scroll 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+.var__social__net li + li {
+    margin-left: 4px;
+}
+
+.tag__list{
+    margin-left: -10px;
+    margin-right: -10px;
+    li{
+        margin: 0 10px 20px;
+        a{
+            background: transparent none repeat scroll 0 0;
+            border: 1px solid #cbcbcb;
+            color: #232323;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            height: 36px;
+            line-height: 36px;
+            padding: 0 30px;
+            transition: all 0.3s ease 0s;
+            &:hover{
+                background: $theme-color;
+                border: 1px solid #d50c0d;
+                color: #fff;
+            }
+
+        }
+    }
+}
+
+
+.food__sidebar {
+  padding-right: 20px;
+}
+
+
+.food__category{
+    li{
+        padding-left: 25px;
+        position: relative;
+        &::before {
+            background: #646464 none repeat scroll 0 0;
+            content: "";
+            height: 7px;
+            left: 0;
+            position: absolute;
+            top: 42%;
+            transform: rotate(-136deg);
+            transition: all 0.3s ease 0s;
+            width: 7px;
+        }
+        &:hover::before {
+            background: $theme-color;
+        }
+    }
+}
+.food__category li:last-child::before {
+    top: 60%;
+}
+.food__category li:first-child::before {
+    top: 28%;
+}
+
+@media #{$lg-layout}{
+
+    
+}
+
+@media #{$md-layout}{
+
+
+}
+@media #{$sm-layout}{
+
+
+}
+
+@media #{$xs-layout}{
+
+
+}
+
+
+
+
+
+

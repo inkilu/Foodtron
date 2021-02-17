@@ -1,0 +1,117 @@
+/*********************************************************************************
+
+	Template Name: Template full name  
+	Template URI: https://themeforest.net/user/
+	Description: Template description
+	Author: author name
+	Author URI: author uri
+	Version: 1.0
+
+	Note: This is style css.
+
+**********************************************************************************/
+
+
+/*==============================
+	CSS INDEX
+===============================
+
+	Reset
+	Typography
+	Helper Class
+	Section Title
+	Button
+	Header Area
+	Navigation Area
+	Banner Area
+	Footer Area
+	Slider Area
+	Service Area
+	Product Area
+	Testimonial Area
+	Blog Area
+	About Area
+	Pizza Area
+	Counterup Area
+	Feature Area
+	Team Area
+	Contact Area
+	Breadcamp Area
+	Menu Grid Area
+	Pagination Area
+	Menu List
+	Blog Masonary
+	About Us
+	Accordion Area
+	Sidebar Area
+	Blog Grid
+	Blog Details
+	Cart
+	Menu Details
+	Login
+	CartBox
+	Checkbox
+	Responsive
+
+
+================================*/
+
+/*=========================================
+	font-family: 'Open Sans', sans-serif;
+	
+	font-family: 'Alegreya', serif;
+=======================================*/
+
+/*Font Family*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800');
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,600,700i,700,900');
+
+/*Basic styles*/
+@import 'basic/reset';
+@import 'basic/typography';
+@import 'basic/helper-class';
+
+/*Elements*/
+@import 'elements/section-title';
+@import 'elements/button';
+
+/*Blocks*/
+@import 'blocks/header';
+@import 'blocks/navigation';
+@import 'blocks/banner';
+@import 'blocks/footer';
+@import 'blocks/slider';
+@import 'blocks/service';
+@import 'blocks/product';
+@import 'blocks/testimonial';
+@import 'blocks/blog';
+@import 'blocks/about';
+@import 'blocks/pizza';
+@import 'blocks/counterup';
+@import 'blocks/feature';
+@import 'blocks/team';
+@import 'blocks/contact';
+@import 'blocks/bradcaump';
+@import 'blocks/menu-grid';
+@import 'blocks/pagination';
+@import 'blocks/menu-list';
+@import 'blocks/gallery';
+@import 'blocks/blog-list';
+@import 'blocks/blog-masonry';
+@import 'blocks/about-us';
+@import 'blocks/accordion';
+@import 'blocks/sidebar';
+@import 'blocks/blog-grid';
+@import 'blocks/blog-details';
+@import 'blocks/cart';
+@import 'blocks/menu-details';
+@import 'blocks/login';
+@import 'blocks/cartbox';
+@import 'blocks/checkout';
+@import 'blocks/responsive';
+
+
+
+
+// Practise
