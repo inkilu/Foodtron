@@ -1,10 +1,12 @@
 <?php
 session_start();
-$dbname="foodtron_db";
-$dbusername="root";
-$dbpassword="";
-$dbhost="127.0.0.1";
-$conn= mysqli_connect($dbhost,$dbusername,$dbpassword,$dbname);
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $query = "DELETE * FROM cart where id = "
+require ('connection.php');
+    $query = " TRUNCATE TABLE cart ";
+    $result = mysqli_query($conn,$query);    
 ?>
+<script>
+function redir(){
+window.location.replace("../cart.php");
+}
+redir();
+</script>

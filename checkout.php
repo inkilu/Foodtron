@@ -1,7 +1,6 @@
 <?php
-require('php/connection.php');
 session_start();
-$_SESSION['subtotal'] = 0;
+require('php/connection.php');
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -9,7 +8,7 @@ $_SESSION['subtotal'] = 0;
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cart || Foodtron Food Delivery </title>
+    <title>Checkout || Aahar Food Delivery Html5 Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,8 +30,8 @@ $_SESSION['subtotal'] = 0;
 
 <body>
     <!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-	<![endif]-->
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
     <!-- Add your site or application content here -->
 
@@ -110,11 +109,11 @@ $_SESSION['subtotal'] = 0;
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="bradcaump__inner text-center">
-                                <h2 class="bradcaump-title">Your cart</h2>
+                                <h2 class="bradcaump-title">Checkout</h2>
                                 <nav class="bradcaump-inner">
-                                    <a class="breadcrumb-item" href="index.php">Home</a>
+                                    <a class="breadcrumb-item" href="index.html">Home</a>
                                     <span class="brd-separetor"><i class="zmdi zmdi-long-arrow-right"></i></span>
-                                    <span class="breadcrumb-item active">cart page</span>
+                                    <span class="breadcrumb-item active">Checkout</span>
                                 </nav>
                             </div>
                         </div>
@@ -123,77 +122,168 @@ $_SESSION['subtotal'] = 0;
             </div>
         </div>
         <!-- End Bradcaump area -->
-        <!-- cart-main-area start -->
-        <div class="cart-main-area section-padding--lg bg--white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 ol-lg-12">
-                        <form action="#">
-                            <div class="table-content table-responsive">
-                                <table>
-                                    <thead>
-                                        <tr class="title-top">
+        <section class="htc__checkout bg--white section-padding--lg">
+            <!-- Checkout Section Start-->
+            <div class="checkout-section">
+                <div class="container">
+                    <div class="row">
 
-                                            <th class="product-name">Product</th>
-                                            <th class="product-price">Price</th>
-                                            <th class="product-subtotal">Total(Incl. Tax)</th>
-                                            <th class="product-remove">Remove</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                        <div class="col-lg-6 col-12 mb-30">
+
+                            <!-- Checkout Accordion Start -->
+                            <div id="checkout-accordion">
+                                <label>Delivery Type :</label><br>
+                                <form action="php/order.php" method="post">
+                                    <input type="radio" id="drivethru" name="dtype" value="dt" required>
+                                    <label for="drivethru">Drive-Thru</label><br>
+                                    <input type="radio" id="homedeliv" name="dtype" value="hd">
+                                    <label for="homedeliv">Home Delivery</label><br> <br>
+                                    <!-- Billing Method -->
+                                    <div class="single-accordion">
+                                        <a class="accordion-head collapsed" data-toggle="collapse" data-parent="#checkout-accordion" href="#billing-method">1.Address (only for Home Delivery)</a>
+                                        <div id="billing-method" class="collapse">
+
+                                            <div class="accordion-body billing-method fix">
+
+
+                                                <div class="row">
+
+                                                    <div class="col-md-6 col-12 mb--20">
+                                                        <input type="text" name="fname" placeholder="First Name"required>
+                                                    </div>
+                                                    <div class="col-md-6 col-12 mb--20">
+                                                        <input type="text" name="lname" placeholder="Last Name"required>
+                                                    </div>
+                                                    <div class="col-12 mb--20">
+                                                        <input type="text" name="hname" placeholder="House Name"required>
+                                                    </div>
+                                                    <div class="col-12 mb--20">
+                                                        <input placeholder="Street address" name="stadd" type="text"required>
+                                                    </div>
+                                                    <div class="col-12 mb--20">
+                                                        <input placeholder="Apartment, suite, unit etc. (optional)" name="aptno"type="text"required>
+                                                    </div>
+                                                    <div class="col-12 mb--20">
+                                                        <input placeholder="Town / City"name="town" type="text"required>
+                                                    </div>
+                                                    <div class="col-md-6 col-12 mb--20">
+                                                        <input placeholder="Postcode / Zip" name="zip"type="text"required>
+                                                    </div>
+                                                    <div class="col-md-6 col-12">
+                                                        <input type="email" name="email"placeholder="Email Address"required>
+                                                    </div>
+                                                    <div class="col-md-6 col-12">
+                                                        <input placeholder="Phone Number" name="phno"type="text" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Payment Method -->
+                                    <div class="single-accordion">
+                                        <a class="accordion-head collapsed" data-toggle="collapse" data-parent="#checkout-accordion" href="#payment-method">4. Payment method</a>
+                                        <div id="payment-method" class="collapse">
+                                            <div class="accordion-body payment-method fix">
+                                                <div class="row">
+                                                    <div class="input-box col-12 mb--20">
+                                                        <label for="card-name">Name on Card *</label>
+                                                        <input type="text" name="noc"id="card-name" required/>
+                                                    </div>
+                                                    <div class="input-box col-12 mb--20">
+                                                        <label>Credit Card Type</label>
+                                                        <select name="cardtype" required>
+                                                            <option value="visa">VISA/MasterCard</option>
+                                                            <option value="other">Other Debit/Credit Card</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-box col-12 mb--20">
+                                                        <label for="card-number">Card Number *</label>
+                                                        <input type="text" name="cardno" id="card-number" required/>
+                                                    </div>
+                                                    <div class="input-box col-12">
+                                                        <div class="row">
+                                                            <div class="input-box col-12">
+                                                                <label>Expiration Date</label>
+                                                            </div>
+                                                            <div class="input-box col-md-6 col-12 mb--20">
+                                                                <select name="expmonth" required>
+                                                                    <option value="jan">Jan</option>
+                                                                    <option value="feb">Feb</option>
+                                                                    <option value="mar">Mar</option>
+                                                                    <option value="april">Apr</option>
+                                                                    <option value="may">May</option>
+                                                                    <option value="june">Jun</option>
+                                                                    <option value="july">Jul</option>
+                                                                    <option value="aug">Aug</option>
+                                                                    <option value="sep">Sep</option>
+                                                                    <option value="oct">Oct</option>
+                                                                    <option value="nov">Nov</option>
+                                                                    <option value="dec">Dec</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="input-box col-md-6 col-12 mb--20">
+                                                                <select name="expyear">
+                                                                    <option value="2021">2021</option>
+                                                                    <option value="2022">2022</option>
+                                                                    <option value="2023">2023</option>
+                                                                    <option value="2024">2024</option>
+                                                                    <option value="2025">2025</option>
+                                                                    <option value="2026">2026</option>
+                                                                    <option value="2027">2027</option>
+                                                                    <option value="2028">2028</option>
+                                                                    <option value="2029">2029</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-box col-12">
+                                                        <label for="card-Verify">Card Verification Number *</label>
+                                                        <input type="text" name="cvv" id="card-Verify" />
+                                                        <p style="color:red"><br>For security reasons we only accept E-payments.</p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div><!-- Checkout Accordion Start -->
+                        </div>
+
+                        <!-- Order Details -->
+                        <div class="col-lg-6 col-12 mb-30">
+
+                            <div class="order-details-wrapper">
+                                <h2>your order</h2>
+                                <div class="order-details">
+
+                                    <ul>
+                                        <li>
+                                            <p class="strong">product</p>
+                                            <p class="strong">total</p>
+                                        </li>
                                         <?php
-                                        echo "<tr>";
                                         $records = mysqli_query($conn, "SELECT * FROM cart");
-
                                         while ($records1 = mysqli_fetch_assoc($records)) {
-                                            $ccid = $records1['id'];
-
-                                            echo '<td class="product-name">' . $records1["name"] . '</td>';
-                                            echo "<td class='product-price'>" . "₹" . $records1['price'] . "</td>";
-                                            echo "<td class='product-price'>" . "₹" . $records1['price'] + '13' . "</td>";
-                                            echo "<td class='product-remove'>" . "<form action='cart.php' method='POST'>" . "<button type='submit' name='1' value='$ccid'>X</button>" . "</form>" . "</td>";
-                                            echo "</tr>";
+                                            echo '<li>' . '<p>' . $records1["name"] . '</p>' . '<p>' . '₹' . $records1['price'] + '13' . '</p>';
                                         }
-                                        ?>
-                                    </tbody>
-                                </table>
+                                        ?> <li>
+                                            <p class="strong">order total</p>
+                                            <p class="strong"><?php echo  '₹' . $_SESSION['subtotal']; ?></p>
+                                        </li>
+                                        <li><button class="food__btn" type="submit" name="order">place order</button></li>
+                                    </ul>
+                                    </form> <!-- form end -->
+                                </div>
                             </div>
-                        </form>
-                        <div class="cartbox__btn">
-                            <ul class="cart__btn__list d-flex flex-wrap flex-md-nowrap flex-lg-nowrap justify-content-between">
-                                <li><a href="checkout.php">Check Out</a></li>
-                                <li><a href="php/delcart.php">Clear Cart</a></li>
-                            </ul>
+
                         </div>
+
                     </div>
                 </div>
-                <?php
-                $records = mysqli_query($conn, "SELECT * FROM cart");
-                while ($records1 = mysqli_fetch_assoc($records)) {
-                    $money = $records1['price'] + '13';
-                    $_SESSION['subtotal'] += $money;
-                }
-                ?>
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-6">
-                        <div class="cartbox__total__area">
-                            <div class="cartbox-total d-flex justify-content-between">
-                            </div>
-                            <div class="cart__total__amount">
-                                <span>Grand Total</span>
-                                <span><?php
-                                        if (empty($_SESSION['subtotal']))
-                                            echo "₹" . "0";
-                                        else
-                                            echo "₹" . $_SESSION['subtotal'];
-                                        ?></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- cart-main-area end -->
+            </div><!-- Checkout Section End-->
+        </section>
         <!-- Start Footer Area -->
         <footer class="footer__area footer--1">
             <div class="footer__wrapper bg__cat--1 section-padding--lg">
@@ -220,8 +310,8 @@ $_SESSION['subtotal'] = 0;
                                                     <i class="zmdi zmdi-phone"></i>
                                                 </div>
                                                 <div class="frt__address__details">
-                                                    <p><a href="#">9497441773</a></p>
-                                                    <p><a href="#">9497441553</a></p>
+                                                    <p><a href="#">+088 01673-453290</a></p>
+                                                    <p><a href="#">+088 01773-458290</a></p>
                                                 </div>
                                             </div>
                                             <div class="ftr__address">
@@ -229,7 +319,7 @@ $_SESSION['subtotal'] = 0;
                                                     <i class="zmdi zmdi-email"></i>
                                                 </div>
                                                 <div class="frt__address__details">
-                                                    <p><a href="#">ccfoodtron@email.com</a></p>
+                                                    <p><a href="#">Aahardelivery@email.com</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -359,46 +449,46 @@ $_SESSION['subtotal'] = 0;
                 </ul>
                 <div class="accountbox__inner tab-content" id="myTabContent">
                     <div class="accountbox__login tab-pane fade show active" id="log" role="tabpanel" aria-labelledby="log-tab">
-                        <form action="#">
-                            <div class="single-input">
-                                <input class="cr-round--lg" type="text" placeholder="User name or email">
+
+                        <div class="single-input">
+                            <input class="cr-round--lg" type="text" placeholder="User name or email">
+                        </div>
+                        <div class="single-input">
+                            <input class="cr-round--lg" type="password" placeholder="Password">
+                        </div>
+                        <div class="single-input">
+                            <button type="submit" class="food__btn"><span>Go</span></button>
+                        </div>
+                        <div class="accountbox-login__others">
+                            <h6>Or login with</h6>
+                            <div class="social-icons">
+                                <ul>
+                                    <li class="facebook"><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twitter"><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="pinterest"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
                             </div>
-                            <div class="single-input">
-                                <input class="cr-round--lg" type="password" placeholder="Password">
-                            </div>
-                            <div class="single-input">
-                                <button type="submit" class="food__btn"><span>Go</span></button>
-                            </div>
-                            <div class="accountbox-login__others">
-                                <h6>Or login with</h6>
-                                <div class="social-icons">
-                                    <ul>
-                                        <li class="facebook"><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="twitter"><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="pinterest"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
+
                     </div>
                     <div class="accountbox__register tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <form action="#">
-                            <div class="single-input">
-                                <input class="cr-round--lg" type="text" placeholder="User name">
-                            </div>
-                            <div class="single-input">
-                                <input class="cr-round--lg" type="email" placeholder="Email address">
-                            </div>
-                            <div class="single-input">
-                                <input class="cr-round--lg" type="password" placeholder="Password">
-                            </div>
-                            <div class="single-input">
-                                <input class="cr-round--lg" type="password" placeholder="Confirm password">
-                            </div>
-                            <div class="single-input">
-                                <button type="submit" class="food__btn"><span>Sign Up</span></button>
-                            </div>
-                        </form>
+
+                        <div class="single-input">
+                            <input class="cr-round--lg" type="text" placeholder="User name">
+                        </div>
+                        <div class="single-input">
+                            <input class="cr-round--lg" type="email" placeholder="Email address">
+                        </div>
+                        <div class="single-input">
+                            <input class="cr-round--lg" type="password" placeholder="Password">
+                        </div>
+                        <div class="single-input">
+                            <input class="cr-round--lg" type="password" placeholder="Confirm password">
+                        </div>
+                        <div class="single-input">
+                            <button type="submit" class="food__btn"><span>Sign Up</span></button>
+                        </div>
+
                     </div>
                     <span class="accountbox-close-button"><i class="zmdi zmdi-close"></i></span>
                 </div>
@@ -482,13 +572,5 @@ $_SESSION['subtotal'] = 0;
     <script src="js/plugins.js"></script>
     <script src="js/active.js"></script>
 </body>
-<?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $delvar = $_POST['1'];
-    $query = "DELETE FROM `cart` WHERE `cart`.`id` = '$delvar'";
-    mysqli_query($conn, $query);
-    header("Refresh:0");
-}
-?>
 
 </html>
