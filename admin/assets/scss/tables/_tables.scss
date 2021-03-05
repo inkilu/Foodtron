@@ -91,6 +91,6 @@
 .table-overflow {
 	@include screen-tablet {
 		width: 100%;
-		overflow-x: auto;
+		overflow-x: scroll;
 	}
 }

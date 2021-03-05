@@ -111,7 +111,7 @@ require('php/connection.php');
                             <div class="bradcaump__inner text-center">
                                 <h2 class="bradcaump-title">Checkout</h2>
                                 <nav class="bradcaump-inner">
-                                    <a class="breadcrumb-item" href="index.html">Home</a>
+                                    <a class="breadcrumb-item" href="index.php">Home</a>
                                     <span class="brd-separetor"><i class="zmdi zmdi-long-arrow-right"></i></span>
                                     <span class="breadcrumb-item active">Checkout</span>
                                 </nav>
@@ -167,13 +167,13 @@ require('php/connection.php');
                                                         <input placeholder="Town / City"name="town" type="text"required>
                                                     </div>
                                                     <div class="col-md-6 col-12 mb--20">
-                                                        <input placeholder="Postcode / Zip" name="zip"type="text"required>
+                                                        <input type="number" placeholder="Postcode / Zip" name="zip"type="text"required>
                                                     </div>
                                                     <div class="col-md-6 col-12">
                                                         <input type="email" name="email"placeholder="Email Address"required>
                                                     </div>
                                                     <div class="col-md-6 col-12">
-                                                        <input placeholder="Phone Number" name="phno"type="text" required>
+                                                        <input type="number"placeholder="Phone Number" name="phno"type="text" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -198,7 +198,7 @@ require('php/connection.php');
                                                     </div>
                                                     <div class="input-box col-12 mb--20">
                                                         <label for="card-number">Card Number *</label>
-                                                        <input type="text" name="cardno" id="card-number" required/>
+                                                        <input type="number" name="cardno" id="card-number" required/>
                                                     </div>
                                                     <div class="input-box col-12">
                                                         <div class="row">
@@ -238,7 +238,7 @@ require('php/connection.php');
                                                     </div>
                                                     <div class="input-box col-12">
                                                         <label for="card-Verify">Card Verification Number *</label>
-                                                        <input type="text" name="cvv" id="card-Verify" />
+                                                        <input type="number" name="cvv" id="card-Verify" />
                                                         <p style="color:red"><br>For security reasons we only accept E-payments.</p>
                                                     </div>
                                                 </div>

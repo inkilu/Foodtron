@@ -2,6 +2,9 @@
 require('php/connection.php');
 session_start();
 $_SESSION['subtotal'] = 0;
+if(!isset($_SESSION['sess'])){
+    echo "'<script>alert('Please Log-In'); window.location.replace('index.php');</script>'";
+}
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -490,5 +493,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header("Refresh:0");
 }
 ?>
-
 </html>

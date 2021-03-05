@@ -5,6 +5,12 @@ if(isset($_POST['your_name'])){
     
    $uname=$_POST['your_name'];
    $pswrd=$_POST['your_pass'];
+   if($uname == 'dboy' && $pswrd == 'dboy123'){
+       header ("Location:../admin/dboy.php");
+   }
+   if($uname == 'admin' && $pswrd == 'admin123'){
+    header ("Location:../admin/admin.php");
+}
   
    $sql = "select * from registration where username='".$uname."'AND password='".$pswrd."' limit 1";
    $result=mysqli_query($conn,$sql);
@@ -17,9 +23,9 @@ if(isset($_POST['your_name'])){
 }
 else{
     
-    echo " You Have Entered Incorrect Password. Redirecting in 3 sec.";
+    echo " You Have Entered Incorrect Password or Username!";
     ?>
-    <br><a href="../index.php">Click Here to Go Back</a> 
+    <br><a href="../reg/loginfrm.php">Click Here to Go Back</a> 
 <?php
     exit();
 }

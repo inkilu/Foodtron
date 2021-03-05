@@ -3,41 +3,43 @@ session_start();
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Foodtron || Food Delivery!</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Foodtron || Food Delivery!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/icon.png">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icon.png">
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="style.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="style.css">
 
-	<!-- Cusom css -->
-   <link rel="stylesheet" href="css/custom.css">
-   <link rel="stylesheet" href="cstyle.css">
+    <!-- Cusom css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="cstyle.css">
 
-	<!-- Modernizer js -->
-	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Modernizer js -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
+
 <body>
-	<!--[if lte IE 9]>
+    <!--[if lte IE 9]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 	<![endif]-->
 
-	<!-- Add your site or application content here -->
-	
-	<!-- <div class="fakeloader"></div> -->
+    <!-- Add your site or application content here -->
+
+    <!-- <div class="fakeloader"></div> -->
 
     <!-- Main wrapper -->
-	<div class="wrapper" id="wrapper">
-		<!-- Start Header Area -->
+    <div class="wrapper" id="wrapper">
+        <!-- Start Header Area -->
         <header class="htc__header bg--white">
             <!-- Start Mainmenu Area -->
             <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
@@ -55,48 +57,47 @@ session_start();
                                 <nav class="main__menu__nav d-none d-lg-block">
                                     <ul class="mainmenu">
                                         <li class="drop"><a href="index.php">Home</a>
-                                         <!--   <ul class="dropdown__menu">
+                                            <!--   <ul class="dropdown__menu">
                                                 <li><a href="index.html">Home Food Delivery</a></li>
                                                 <li><a href="index-2.html">Home Pizza Delivery</a></li>
                                                 <li><a href="index-3.html">Home Backery Delivery</a></li>
                                                 <li><a href="index-4.html">Home Box Layout</a></li>
                                             </ul> -->
                                         </li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="admin/profile.php">Profile</a></li>
+                                        <li><a href="php/logout.php">Logout</a></li>
                                     </ul>
                                 </nav>
-                                
+
                             </div>
                         </div>
                         <div class="col-lg-1 col-sm-4 col-md-4 order-2 order-lg-3">
                             <div class="header__right d-flex justify-content-end">
-                            <div class="log__in"> 
+                                <div class="log__in">
                                     <a class="" href="reg/loginfrm.php">
                                         <div class="inktext">
-                                        <h5><?php 
-                                          if(isset($_SESSION['sess'])){
-                                          echo"Hello,".$_SESSION['sess'];
-                                          }
-                                          else{
-                                              echo "Login";
-                                          }
-                                          ?></h5> <!-- login status/User Status-->
+                                            <h5><?php
+                                                if (isset($_SESSION['sess'])) {
+                                                    echo "Hello," . $_SESSION['sess'];
+                                                } else {
+                                                    echo "Login";
+                                                }
+                                                ?></h5> <!-- login status/User Status-->
                                         </div>
-                                        </a>
-                                </div> 
+                                    </a>
+                                </div>
 
                                 <div class="shopping__cart">
-                                    <a  href="cart.php"><i class="zmdi zmdi-shopping-basket"></i></a>
-                                
+                                    <a href="cart.php"><i class="zmdi zmdi-shopping-basket"></i></a>
+
                                 </div>
                                 <ul class="dropdown__menu">
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Mobile Menu -->
-                        <div class="mobile-menu d-block d-lg-none"></div>
+                    <div class="mobile-menu d-block d-lg-none"></div>
                     <!-- Mobile Menu -->
                 </div>
             </div>
@@ -115,12 +116,13 @@ session_start();
                                     <div class="slider__inner">
                                         <h2>“Foodtron”</h2>
                                         <h1>food delivery service</h1>
+
                                         <div class="slider__input">
-                                            <input type="text" placeholder="Type Place, City.Division">
-                                            <input class="res__search" type="text" placeholder="Restaurant">
+                                            <input type="text" placeholder="Type a Category..">
                                             <div class="src__btn">
-                                                <a href="menu-list.php">Search</a>
+                                                <a href="menu-list.php">Go</a>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -152,10 +154,10 @@ session_start();
                                     <div class="ser__icon">
                                         <img src="images/icon/color-icon/1.png" alt="icon image">
                                     </div>
-                                    <h2><a href="service.html">Choose restaurant</a></h2>
+                                    <h2><a href="service.html">Choose A Category</a></h2>
                                 </div>
                                 <div class="service__details">
-                                    <p>Choose what your mind wants,Get all restaurants in your area!</p>
+                                    <p>Choose what your mind wants,From all restaurants in your area!</p>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +172,7 @@ session_start();
                                     <h2><a href="service.html">Select,what you love to eat</a></h2>
                                 </div>
                                 <div class="service__details">
-                                    <p>Over 50+ dishes from different Restaurants,All Fresh and Warm!</p>
+                                    <p>Over 20+ dishes from different Restaurants,All Fresh and Warm!</p>
                                 </div>
                             </div>
                         </div>
@@ -212,12 +214,13 @@ session_start();
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="food__item foo">
                                 <div class="food__thumb">
-                                    <a href="menu-list.php"><!--On clicking photo-->
+                                    <a href="menu-list.php">
+                                        <!--On clicking photo-->
                                         <img src="images/product/md-product/1.jpg" alt="product images">
                                     </a>
                                 </div>
                                 <div class="food__title">
-                                    <h2><a href="menu-list.php">Breakfast Items</a></h2>
+                                    <h2><a href="menu-list.php">Cuisines</a></h2>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +234,7 @@ session_start();
                                     </a>
                                 </div>
                                 <div class="food__title">
-                                    <h2><a href="menu-list2.php">Drinks</a></h2>
+                                    <h2><a href="menu-list2.php">Drinks/Desserts</a></h2>
                                 </div>
                             </div>
                         </div>
@@ -368,7 +371,7 @@ session_start();
                         </div>
                         <!-- End Single Footer -->
                         <!-- Start Single Footer -->
-                        
+
                         <!-- End Single Footer -->
                     </div>
                 </div>
@@ -406,7 +409,8 @@ session_start();
                 </ul>
                 <div class="accountbox__inner tab-content" id="myTabContent">
                     <div class="accountbox__login tab-pane fade show active" id="log" role="tabpanel" aria-labelledby="log-tab">
-            <!--LOGIN.-->  <form action="php/login.php" method="POST" name="loginform" id="loginform">
+                        <!--LOGIN.-->
+                        <form action="php/login.php" method="POST" name="loginform" id="loginform">
                             <div class="single-input">
                                 <input class="cr-round--lg" type="text" name="usernmeoremail" placeholder="User name or email" required>
                             </div>
@@ -429,7 +433,8 @@ session_start();
                         </form>
                     </div>
                     <div class="accountbox__register tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <!--REGISTER-->     <form action="php/register.php" method="POST" name="registerform" id="registerform">
+                        <!--REGISTER-->
+                        <form action="php/register.php" method="POST" name="registerform" id="registerform">
                             <div class="single-input">
                                 <input class="cr-round--lg" type="text" name="usernme" placeholder="User name" required>
                             </div>
@@ -451,7 +456,7 @@ session_start();
                 </div>
             </div>
         </div><!-- //Login Form -->
-            <!-- Cartbox -->
+        <!-- Cartbox -->
         <div class="cartbox-wrap">
             <div class="cartbox text-right">
                 <button class="cartbox-close"><i class="zmdi zmdi-close"></i></button>
@@ -519,14 +524,15 @@ session_start();
                     </div>
                 </div>
             </div>
-        </div><!-- //Cartbox -->  
-	</div><!-- //Main wrapper -->
+        </div><!-- //Cartbox -->
+    </div><!-- //Main wrapper -->
 
-	<!-- JS Files -->
-	<script src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/active.js"></script>
+    <!-- JS Files -->
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/active.js"></script>
 </body>
+
 </html>

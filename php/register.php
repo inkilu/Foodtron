@@ -8,7 +8,7 @@ if(isset($_POST['signup'])){
 if(strcmp($regpassword,$regpassword1 == 0)){
        $query= "INSERT INTO registration (username,email,password) VALUES ('$regusername','$regemail','$regpassword');";
         $result = mysqli_query($conn,$query);
-         echo (!$conn) ? "error" : header("Locatin:../index.html");
+         echo (!$conn) ? "error" : header("Location:../index.php");
      }
 }
 ?>

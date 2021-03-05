@@ -159,8 +159,11 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                                         echo$row['name'];
                                         ?></h2>
                                             <p>Chocolate shake is a cold drink made of milk, a sweet flavouring such as chocolate and typically ice cream, whisked until it is frothy”. It is an Americanism that dates back to the 1880s, when the beverage was initially made with whisky and known as a “sturdy, healthful” drink</p>
-                                            <div class="list__btn">h
-                                                <a class="food__btn grey--btn theme--hover" href="#">Order Now</a>
+                                            <div class="list__btn">
+                                            <form action="php/bcart.php" method="post">
+                                               <button type="submit" name="cshake" class="food__btn grey--btn theme--hover"onClick="add();">Order Now</button>
+                                              
+                                            </form> 
                                             </div>
                                         </div>
                                         <div class="food__rating">
@@ -197,7 +200,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                                         ?></h2>
                                             <p>Lassi is a popular traditional dahi-based drink that originated in the Indian Subcontinent. Lassi is a blend of yogurt, water, spices and sometimes fruit. Namkeen lassi is similar to doogh, while sweet and mango lassis are like milkshakes.</p>
                                             <div class="list__btn">
-                                                <a class="food__btn grey--btn theme--hover" href="#">Order Now</a>
+                                            <form action="php/bcart.php" method="post">
+                                               <button type="submit" name="lassi" class="food__btn grey--btn theme--hover"onClick="add();">Order Now</button>
+                                              
+                                            </form> 
                                             </div>
                                         </div>
                                         <div class="food__rating">
@@ -236,7 +242,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                                         ?></h2>
                                             <p>Lassi is a popular traditional dahi-based drink that originated in the Indian Subcontinent. Lassi is a blend of yogurt, water, spices and sometimes fruit.In this case the fruit used is freshly peeled bananas.</p>
                                             <div class="list__btn">
-                                                <a class="food__btn grey--btn theme--hover" href="#">Order Now</a>
+                                            <form action="php/bcart.php" method="post">
+                                               <button type="submit" name="blassi" class="food__btn grey--btn theme--hover"onClick="add();">Order Now</button>
+                                              
+                                            </form> 
                                             </div>
                                         </div>
                                         <div class="food__rating">
@@ -275,7 +284,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                                         ?></h2>
                                             <p>It is a drink containing corn syrup,red crystal sprinkles and pineapple sherbet.It is named after the famous japanese flower.</p>
                                             <div class="list__btn">
-                                                <a class="food__btn grey--btn theme--hover" href="#">Order Now</a>
+                                            <form action="php/bcart.php" method="post">
+                                               <button type="submit" name="cblo" class="food__btn grey--btn theme--hover"onClick="add();">Order Now</button>
+                                              
+                                            </form> 
                                             </div>
                                         </div>
                                         <div class="food__rating">
@@ -314,7 +326,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                                         ?></h2>
                                             <p>Blue Lagoon is a cocktail featuring blue Curaçao mixed with vodka and lemonade. It is typically garnished with an orange slice or a lemon slice. Blue Lagoon is typically served in a highball glass. </p>
                                             <div class="list__btn">
-                                                <a class="food__btn grey--btn theme--hover" href="#">Order Now</a>
+                                            <form action="php/bcart.php" method="post">
+                                               <button type="submit" name="bluel" class="food__btn grey--btn theme--hover"onClick="add();">Order Now</button>
+                                              
+                                            </form> 
                                             </div>
                                         </div>
                                         <div class="food__rating">
@@ -353,7 +368,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                                         ?></h2>
                                             <p>Litchi Mojito is a refreshing drink to beat the summer heat. This is a very easy and quick recipe to prepare.The ingredients are litchi juice,lemon juice,sugar,mint leaves and chilled soda.</p>
                                             <div class="list__btn">
-                                                <a class="food__btn grey--btn theme--hover" href="#">Order Now</a>
+                                            <form action="php/bcart.php" method="post">
+                                               <button type="submit" name="litchi" class="food__btn grey--btn theme--hover"onClick="add();">Order Now</button>
+                                              
+                                            </form> 
                                             </div>
                                         </div>
                                         <div class="food__rating">
@@ -392,7 +410,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                                         ?></h2>
                                             <p>The Red Lime is a small, compact tree that produces beautiful orange skinned fruit with reddish orange flesh much like Key Limes in size and flavor.The juice is extracted to create this drink.</p>
                                             <div class="list__btn">
-                                                <a class="food__btn grey--btn theme--hover" href="#">Order Now</a>
+                                            <form action="php/bcart.php" method="post">
+                                               <button type="submit" name="redl" class="food__btn grey--btn theme--hover"onClick="add();">Order Now</button>
+                                              
+                                            </form> 
                                             </div>
                                         </div>
                                         <div class="food__rating">

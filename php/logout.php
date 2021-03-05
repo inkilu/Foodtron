@@ -5,4 +5,3 @@ if(isset($_SESSION['sess'])){
     session_destroy();
  header("Location: ../index.php");
 }
-?>
