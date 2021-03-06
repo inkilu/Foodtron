@@ -1,7 +1,7 @@
 #  Foodtron
 > **Final Release [v1.0]**
  
-####  Every aspect is working as intented,though there are some bugs.However those won't be fixed as this project is no longer going to be maintained.
+####  Every aspect is working as intended,though there are some bugs.However those won't be fixed as this project is no longer going to be maintained.
 
 Requirements : -
 - MySQL Database (Maria DB)
